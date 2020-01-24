@@ -164,11 +164,11 @@ class AJob(models.Model):
         # Creation codes
         CREATED = (0, 'Created')
         # Submission codes
-        SUBMITTED = (10, 'Submitted')
+        SUBMITTED = (100, 'Submitted')
         # Computation codes
-        RUNNING = (20, 'Running')
+        RUNNING = (200, 'Running')
         # Completion codes
-        COMPLETED = (30, 'Completed')
+        COMPLETED = (300, 'Completed')
 
     @unique
     class EStatus(EChoice):
